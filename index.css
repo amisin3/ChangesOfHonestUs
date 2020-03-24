@@ -409,32 +409,28 @@ form button {
 }
 
 .image-services1 {
-  border-radius: 50%;
   border-style: solid;
   border-width: 0.2rem;
-  height: 25rem;
+  height: 10rem;
   margin-top: 4rem;
 }
 
 .image-services2 {
-  border-radius: 50%;
   border-style: solid;
   border-width: 0.2rem;
-  height: 22rem;
+  height: 10rem;
 }
 
 .image-services3 {
-  border-radius: 50%;
   border-style: solid;
   border-width: 0.2rem;
-  height: 15rem;
+  height: 10rem;
 }
 
 .image-services4 {
-  border-radius: 50%;
   border-style: solid;
   border-width: 0.2rem;
-  height: 18rem;
+  height: 10rem;
 }
 
 .heading-services {
@@ -765,7 +761,7 @@ form button {
 
   .flip-card {
     background-color: transparent;
-    width: 16.875rem; /* 302px */
+    width: 16.875rem; /* 302px 16.875rem */
     height: 25rem; /* 400px */
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */

@@ -4,11 +4,11 @@ const email = document.getElementById("email");
 const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 
-const web_form = document.getElementById("web-form");
-const web_name = document.getElementById("web-name");
-const web_email = document.getElementById("web-email");
-const web_subject = document.getElementById("web-subject");
-const web_message = document.getElementById("web-message");
+// const web_form = document.getElementById("web-form");
+// const web_name = document.getElementById("web-name");
+// const web_email = document.getElementById("web-email");
+// const web_subject = document.getElementById("web-subject");
+// const web_message = document.getElementById("web-message");
 
 // Show error message
 function showError(input, message) {
@@ -58,63 +58,63 @@ function getFieldName(input) {
 }
 
 // After someone clicks on submit
-// form.addEventListener("submit", function(e) {
-//   e.preventDefault();
-
-//   checkRequired([name, email, subject, message]);
-//   checkEmailValidation(email);
-//   checkSubjectLength(subject, 30);
-
-//   var bdy =
-//     "Name: " +
-//     name.value +
-//     ", Email: " +
-//     email.value +
-//     ", Subject: " +
-//     subject.value +
-//     ", Message: " +
-//     message.value;
-//   console.log(bdy);
-
-//   if (subject.value !== "") {
-//     Email.send({
-//       SecureToken: "53e530f5-e8b0-4be4-93cb-c05b1f807826",
-//       To: "amit1291997@gmail.com",
-//       From: "amit1291997@gmail.com",
-//       Subject: subject.value,
-//       Body: bdy
-//     }).then(message => alert(message));
-//   }
-// });
-
-web_form.addEventListener("submit", function(e) {
+form.addEventListener("submit", function(e) {
   e.preventDefault();
 
-  checkRequired([web_name, web_email, web_subject, web_message]);
-  checkEmailValidation(web_email);
-  checkSubjectLength(web_subject, 30);
+  checkRequired([name, email, subject, message]);
+  checkEmailValidation(email);
+  checkSubjectLength(subject, 30);
 
   var bdy =
     "Name: " +
-    web_name.value +
+    name.value +
     ", Email: " +
-    web_email.value +
+    email.value +
     ", Subject: " +
-    web_subject.value +
+    subject.value +
     ", Message: " +
-    web_message.value;
+    message.value;
   console.log(bdy);
 
-  if (web_subject.value !== "") {
+  if (subject.value !== "") {
     Email.send({
       SecureToken: "53e530f5-e8b0-4be4-93cb-c05b1f807826",
       To: "amit1291997@gmail.com",
       From: "amit1291997@gmail.com",
-      Subject: web_subject.value,
+      Subject: subject.value,
       Body: bdy
     }).then(message => alert(message));
   }
 });
+
+// web_form.addEventListener("submit", function(e) {
+//   e.preventDefault();
+
+//   checkRequired([web_name, web_email, web_subject, web_message]);
+//   checkEmailValidation(web_email);
+//   checkSubjectLength(web_subject, 30);
+
+//   var bdy =
+//     "Name: " +
+//     web_name.value +
+//     ", Email: " +
+//     web_email.value +
+//     ", Subject: " +
+//     web_subject.value +
+//     ", Message: " +
+//     web_message.value;
+//   console.log(bdy);
+
+//   if (web_subject.value !== "") {
+//     Email.send({
+//       SecureToken: "53e530f5-e8b0-4be4-93cb-c05b1f807826",
+//       To: "amit1291997@gmail.com",
+//       From: "amit1291997@gmail.com",
+//       Subject: web_subject.value,
+//       Body: bdy
+//     }).then(message => alert(message));
+//   }
+// });
 
 //  Going from bottom to top of the page button
 
