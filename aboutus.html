@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HonestUs</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="hamburger.css" />
+  </head>
+  <body>
+    <nav class="navar fixed-it" id="mainNav">
+      <h1>
+        <a href="#" class="navbar-title"
+          ><img
+            class="company-logo"
+            src="images/Company-Logo/Logo Honestus.png"
+            alt="images"
+        /></a>
+      </h1>
+      <div class="container navar-list-container pc-site">
+        <ul class="navar-nav container">
+          <li class="nav-home">
+            <a href="index.html" class="link-home">Home</a>
+          </li>
+          <li class="nav-about">
+            <a href="aboutus.html" class="link-about">About</a>
+          </li>
+          <li class="nav-services">
+            <a href="services.html" class="link-services">Services</a>
+          </li>
+          <li class="nav-work">
+            <a href="clients.html" class="link-work">Clients</a>
+          </li>
+          <li class="nav-contact">
+            <a href="contact.html" class="link-contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar mobile-site" id="sidebar">
+        <div
+          class="toggle-btn menu-wrap"
+          id="toggle-btn"
+          onclick="toggleSideBar()"
+        >
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger">
+            <div></div>
+          </div>
+        </div>
+        <ul>
+          <input type="checkbox" class="toggler" />
+          <li>
+            <a href="index.html" class="activa" onclick="toggleSideBar()">Home</a>
+          </li>
+          <input type="checkbox" class="toggler" />
+          <li>
+            <a href="aboutus.html" class="activa" onclick="toggleSideBar()">About</a>
+          </li>
+          <input type="checkbox" class="toggler" />
+          <li>
+            <a href="services.html" class="activa" onclick="toggleSideBar()"
+              >Services</a
+            >
+          </li>
+          <input type="checkbox" class="toggler" />
+          <li>
+            <a href="clients.html" class="activa" onclick="toggleSideBar()"
+              >Clients</a
+            >
+          </li>
+          <input type="checkbox" class="toggler" />
+          <li>
+            <a href="contact.html" class="activa" onclick="toggleSideBar()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="home" class="home-sect">
+      <div class="home-inner">
+        <h1 class="x-large">HONESTUS FIDE CONSULTING PRIVATE LIMITED</h1>
+        <!-- <p class="sub-heading">We liv to entertain.</p> -->
+      </div>
+    </div>
+    <br /><br />
+    <div id="about">
+      <div class="about-inner container">
+        <h1 class="x-large center-text">About Us</h1>
+        <p class="x-medium center-text">
+          We are a consulting firm offering specialized consultancy to Media
+          Production Houses in areas of Budgeting and Cost Controlling.
+        </p>
+        <div class="underline"></div>
+      </div>
+      <div class="container">
+        <div class="box-shadow-full">
+          <p class="about-content"></p>
+          <ul style="list-style: none;">
+            <li style="font-weight:bold">
+              <i class="fas fa-hand-point-right"></i>Honestus is a
+              multi-disciplinary firm providing innovative and effective
+              services and solutions to media houses to cost control
+            </li>
+            <li style="font-weight: bold;">
+              <i class="fas fa-hand-point-right"></i> Honestus is promoted by
+              young and professional Chartered Accountants having true blend of
+              energetic approach, youthful wisdom and experienced thought
+              process.
+            </li>
+            <li style="font-weight: bold;">
+              <i class="fas fa-hand-point-right"></i> Each activity is executed
+              towards adding value to clients’ business in global arena using
+              indepth knowledge and expertise in all segments of profession.
+            </li>
+            <li style="font-weight: bold;">
+              <i class="fas fa-hand-point-right"></i> Honestus is empowered by
+              professional skills coupled with modern business approach.
+            </li>
+          </ul>
+        </div>
+        <div class="inner container">
+          <h1 class="x-large center-text">Meet Our Team</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="container mobile-site">
+          <div class="add1">
+            <div class="col-md-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/batman-300x300.jpg"
+                      class="employee-pic"
+                      alt="Avatar"
+                    />
+                    <h5 class="employee-name">Nitesh Chhawchharia</h5>
+                    <p class="employee-role italic-text">
+                      Chartered Accountant
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/batman-300x300.jpg"
+                      class="employee-pic"
+                      alt="Avatar"
+                    />
+                    <h5 class="employee-name">Renu Singh</h5>
+                    <p class="employee-role italic-text">
+                      Senior Executive In Backend Team
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/batman-300x300.jpg"
+                      class="employee-pic"
+                      alt="Avatar"
+                    />
+                    <h3 class="employee-name">Sohrab Chhawchharia</h3>
+                    <p class="employee-role italic-text">
+                      Chartered Accountant
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="images/batman-300x300.jpg"
+                      class="employee-pic"
+                      alt="Avatar"
+                    />
+                    <h3 class="employee-name">Vijay Sonawale</h3>
+                    <p class="employee-role italic-text">
+                      Senior Executive In Backend Team
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container pc-site">
+          <div class="box-shadow-full">
+            <div class="add1">
+              <div class="Team-col-1 coll-4 center-text">
+                <div class="emp-pic">
+                  <img
+                    src="images/batman-300x300.jpg"
+                    alt="image"
+                    class="image-emp"
+                  />
+                </div>
+                <div class="emp-name">
+                  <h5>Nitesh Chhawchharia</h5>
+                </div>
+                <div class="emp-role">
+                  <p>Chartered Accountant</p>
+                </div>
+                <div class="btn-read-more">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    id="read-more1"
+                  >
+                    Read More
+                  </button>
+                </div>
+                <div class="more-details" id="more-details">
+                  <div class="modal-content">
+                    <div class="popupCloseButton" id="popupCloseButton">
+                      &times
+                    </div>
+                    <div class="modal-container">
+                      <div class="emp-pic" id="emp-pic">
+                        <img
+                          src="images/batman-300x300.jpg"
+                          alt="image"
+                          id="image-emp"
+                          class="image-emp"
+                        />
+                      </div>
+                      <div class="emp-name" id="emp-name">
+                        <h5>Nitesh Chhawchharia</h5>
+                      </div>
+                      <div class="emp-detail" id="emp-detail">
+                        <p>
+                          Chartered Accountant with over 6 years of professional
+                          experience. Over the past 2 years they have developed
+                          specialty into Media Consultancy services.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="Team-col-2 coll-4 center-text">
+                <div class="emp-pic">
+                  <img
+                    src="images/batman-300x300.jpg"
+                    alt="image"
+                    class="image-emp"
+                  />
+                </div>
+                <div class="emp-name">
+                  <h5>Renu Singh</h5>
+                </div>
+                <div class="emp-role">
+                  <p>Senior Executive In Backend Team</p>
+                </div>
+                <div class="btn-read-more">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    id="read-more3"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+              <div class="Team-col-3 coll-4 center-text">
+                <div class="emp-pic">
+                  <img
+                    src="images/batman-300x300.jpg"
+                    alt="image"
+                    class="image-emp"
+                  />
+                </div>
+                <div class="emp-name">
+                  <h5>Sorabh Chhawchharia</h5>
+                </div>
+                <div class="emp-role">
+                  <p>Chartered Accountant</p>
+                </div>
+                <div class="btn-read-more">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    id="read-more2"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+              <div class="Team-col-4 coll-4 center-text">
+                <div class="emp-pic">
+                  <img
+                    src="images/batman-300x300.jpg"
+                    alt="image"
+                    class="image-emp"
+                  />
+                </div>
+                <div class="emp-name">
+                  <h5>Vijay Sonawale</h5>
+                </div>
+                <div class="emp-role">
+                  <p>Senior Executive In Backend Team</p>
+                </div>
+                <div class="btn-read-more">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary"
+                    id="read-more4"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <br /><br />
+            <h3 class="center-text">
+              Team of <strong>6 BACK-END</strong> and
+              <strong>20 FRONT-END AUDITORS</strong>
+            </h3>
+            <p class="x-medium center-text">
+              <em
+                >The cost reports and controls established in production of
+                content ensures accurate tracking of cost. Our auditors with
+                relevant experience also ensure no wastages are done in
+                production of content</em
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="contact" class="contact">
+        <div class="container">
+          <div class="box-shadow-full mobile-form">
+            <h1 class="x-large center-text">Contact Us</h1>
+            <div class="form-container">
+              <form class="form" id="form">
+                <div class="form-control1">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" placeholder="Enter your name">
+                  <small>Error message</small>
+                </div>
+                <div class="form-control1 ">
+                  <label for="email">Your email</label>
+                  <input type="text" id="email" placeholder="Enter your email">
+                  <small>Error message</small>
+                </div>
+                <div class="form-control1">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" placeholder="Enter your subject">
+                  <small>Error message</small>
+                </div>
+                <div class="form-control1">
+                  <label for="message">Your message</label>
+                  <input type="text" id="message" placeholder="Enter your message">
+                  <small>Error message</small>
+                </div>
+                <button class="submit">Send Message</button>
+              </form>
+            </div>
+            <ul class="list-icon">
+              <li><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>208 Corporate Avenue, Sonawala Road, Goregaon (E), Mumbai – 400 063</li>
+              <li><span class="phone-icon"><i class="fas fa-mobile-alt"></i></span>+91 7738369179 / +91 9820876358</li>
+              <li><span class="mail-icon"><i class="fas fa-envelope"></i></span>office@scassociate.com</li>
+            </ul>
+          </div>
+          <div class="box-shadow-full website-form">
+            <div class="add1">
+              <div class="col-md-6">
+                <h1 class="x-large center-text">Contact Us</h1>
+                <div class="underline"></div>
+                <div class="form-container slide-down">
+                  <form class="form" id="web-form">
+                    <div class="form-control1">
+                      <label for="name">Your Name</label>
+                      <input type="text" id="web-name" placeholder="Enter your name">
+                      <small>Error message</small>
+                    </div>
+                    <div class="form-control1">
+                      <label for="email">Your email</label>
+                      <input type="text" id="web-email" placeholder="Enter your email">
+                      <small>Error message</small>
+                    </div>
+                    <div class="form-control1">
+                      <label for="subject">Subject</label>
+                      <input type="text" id="web-subject" placeholder="Enter your subject">
+                      <small>Error message</small>
+                    </div>
+                    <div class="form-control1">
+                      <label for="message">Your message</label>
+                      <input type="text" id="web-message" placeholder="Enter your message">
+                      <small>Error message</small>
+                    </div>
+                    <button class="submit">Send Message</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6">
+                
+                  <h1 class="x-large center-text">Contact Us With</h1>
+                  <div class="underline"></div>
+                  <div class="slide-left">
+                    <ul class="list-icon">
+                      <li><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>208 Corporate Avenue, Sonawala Road, Goregaon (E), Mumbai – 400 063</li>
+                      <li><span class="phone-icon"><i class="fas fa-mobile-alt"></i></span>+91 7738369179 / +91 9820876358</li>
+                      <li><span class="mail-icon"><i class="fas fa-envelope"></i></span>office@scassociate.com</li>
+                    </ul>
+                    <div class="socials">
+                      <ul>
+                        <li><span class="icon-circle"><i class="fab fa-facebook-f"></i></span></li>
+                        <li><span class="icon-circle"><i class="fab fa-instagram"></i></span></li>
+                        <li><span class="icon-circle"><i class="fab fa-twitter"></i></span></li>
+                      </ul>
+                    </div>
+                    <div id="googleMap" style="width:100%;height:400px;"></div>
+                </div>
+  
+              </div>
+            </div>
+            </div>
+        </div>
+        </div>
+      </section>
+  </body>
+  <script src="aboutus.js"></script>
+  
+  <script>
+    function myMap() {
+      var location = {lat: 19.305601, lng:72.859375};
+      var map = new google.maps.Map(document.getElementById("googleMap"), {
+        zoom: 4,
+        center: location
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map:map
+      });
+    }
+  </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCy-ar9_4Tdu6oGQZN1VztMxrgE4gUA-Y&callback=myMap"></script>
+</html>

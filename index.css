@@ -1,0 +1,1018 @@
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+:root {
+  --primary-color: #17a2b8;
+  --dark-color: #343a40;
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+  --temporary-color: rgba(20.4%, 22.7%, 25.1%, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #4e4e4e;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+.x-large {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.home-inner > .x-large {
+  /* position: relative;
+  top: -100px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2); */
+  display: none;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+
+/* ====================== Navbar Section =============== */
+
+.navar {
+  display: block;
+  text-align: center;
+  border-bottom: solid 1px var(--primary-color);
+  /* background-color: var(--temporary-color); */
+  background-color: white;
+}
+
+.fixed-it {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.fixed-it > h1 {
+  margin-bottom: 0rem;
+  padding-top: 0.5rem;
+}
+
+.company-logo {
+  width: 14rem;
+}
+
+.navar a {
+  color: #fff;
+  /* padding: 0.25rem; */
+  margin: 0 0.2rem;
+}
+
+.navbar-title {
+  text-decoration: none;
+  background-color: white;
+}
+
+.navar-list-container {
+}
+
+.navar-nav {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  /* margin-block-start: 1em;
+  margin-block-end: 1em; */
+  /* margin-inline-start: 0px; */
+  /* margin-inline-end: 0px; */
+}
+
+.navar-nav li a {
+  font-size: 1rem;
+}
+
+/* ======================= Home Section ========================== */
+.home-sect {
+  position: relative;
+  background-image: url("images/cover-pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: 87% 70%;
+  background-attachment: fixed;
+}
+
+.home-inner {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.sub-heading {
+  font-size: 2rem;
+}
+
+/* ========================= About Us ====================== */
+
+.inner {
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.underline {
+  width: 10rem;
+  height: 0.3rem;
+  background-color: #0078ff;
+  margin: 0 auto;
+}
+
+.box-shadow-full {
+  padding: 1rem 1.25rem;
+  position: relative;
+  background-color: #fff;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  border: thick solid #17a2b8;
+}
+
+.about-content {
+  font-size: 1rem;
+}
+
+.fas {
+  display: inline;
+  margin-right: 1rem;
+}
+
+/* ================ Meet Our Team ======================== */
+
+.pc-site {
+  display: none;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 10rem;
+  margin: 1.5rem 0;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #fff;
+  color: #000;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back {
+  display: none;
+}
+
+.employee-pic {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  bottom: 1rem;
+  right: 1rem;
+  width: 6.5rem;
+  height: 8rem;
+}
+
+.employee-name {
+  position: absolute;
+  left: 3.5rem;
+  top: 3rem;
+  font-size: 0.9rem;
+}
+
+.employee-role {
+  position: absolute;
+  left: 3.5rem;
+  top: 5rem;
+  font-size: 0.6rem;
+}
+
+.employee-description {
+  display: none;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ======================== Contact US =================== */
+
+/* Form */
+
+.website-form {
+  display: none;
+}
+
+#bottomtotop {
+  display: none;
+}
+
+.gotopBtn {
+  display: none;
+}
+
+.form-container {
+  font-family: "Open Sans", sans-serif;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-control1 {
+  position: relative;
+  margin-bottom: 0.4rem;
+  padding-bottom: 1rem;
+}
+
+.form-control1 label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #777;
+}
+
+.form-control1 input {
+  border-radius: 0.7rem;
+  border: 0.1rem solid #f0f0f0;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.form-control1 input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control1.success input {
+  border-color: var(--success-color);
+}
+
+.form-control1.error input {
+  border-color: var(--error-color);
+}
+
+.form-control1 small {
+  color: var(--error-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+.form-control1.error small {
+  visibility: visible;
+}
+
+form button {
+  width: 100%;
+  font-weight: bolder;
+  background-color: #3498db;
+  cursor: pointer;
+  border: 0.4rem solid #3498db;
+  border-radius: 4px;
+  color: white;
+  display: block;
+  font-size: 1rem;
+  padding: 0.2rem;
+  margin-top: 1rem;
+}
+
+.list-icon {
+  list-style: none;
+  line-height: 2;
+}
+
+.fas {
+  display: inline;
+  margin-right: 1rem;
+}
+
+/* ======================== SERVICES ============================= */
+.justify-text {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.child-container {
+  margin: 0 0.5rem;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.first-child {
+  background-color: #d36664;
+  text-align: center;
+}
+
+.icon-of-child {
+  font-size: 2rem;
+}
+
+.second-child {
+  background-color: #9ec6ac;
+}
+
+.second-child ul {
+  list-style: none;
+}
+
+/* ========================= On Going Projects =================== */
+
+.position-image {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+}
+
+.img-size {
+  /* width: 20rem; */
+  height: 12rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  /* padding-left: 1.9rem; */
+}
+
+/* ================== Media Queries For Ipad =====================*/
+
+@media only screen and (min-width: 768px) {
+  /* ====================== Navbar Section =============== */
+
+  .navar {
+    display: flex;
+    text-align: left;
+    border-bottom: solid 1px var(--primary-color);
+    /* background-color: var(--temporary-color); */
+    background-color: white;
+    transition: top 0.3s;
+  }
+
+  .fixed-it {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .company-logo {
+    width: 9rem;
+  }
+
+  .navar a {
+    color: black;
+    margin-left: 2rem;
+    font-weight: bold;
+  }
+
+  .navbar-title {
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #0078ff;
+  }
+
+  .navar-list-container {
+  }
+
+  .navar-nav {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    height: inherit;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em; */
+    /* margin-inline-start: 0px; */
+    /* margin-inline-end: 0px; */
+  }
+
+  .navar-nav li a {
+    font-size: 1rem;
+  }
+
+  /* ======================= Home Section ========================== */
+  .home-sect {
+    background-position: center center;
+  }
+
+  .home-inner > .x-large {
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bolder;
+    display: block;
+  }
+
+  /* ================ Meet Our Team ======================== */
+
+  .pc-site {
+    display: none;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 10rem;
+    margin: 1.5rem 0;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* Position the front and back side */
+  .flip-card-front,
+  .flip-card-back {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #fff;
+    color: black;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #fff;
+    color: #000;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back {
+    display: none;
+  }
+
+  .employee-pic {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    width: 6.5rem;
+    height: 8rem;
+  }
+
+  .employee-name {
+    position: absolute;
+    left: 3.5rem;
+    top: 3rem;
+    font-size: 0.9rem;
+  }
+
+  .employee-role {
+    position: absolute;
+    left: 3.5rem;
+    top: 5rem;
+    font-size: 0.6rem;
+  }
+
+  .employee-description {
+    display: none;
+  }
+
+  .table-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ================ Meet Our Team ======================== */
+
+  .mobile-site {
+    display: none;
+  }
+
+  .pc-site {
+    display: block;
+  }
+
+  /* New-look for meet our team */
+
+  .coll-4 {
+    flex: 0 0 22%;
+    max-width: 22%;
+    margin-right: 0.5rem;
+    margin-left: 0.8rem;
+    height: 16rem;
+  }
+
+  .Team-col-1 {
+    margin-top: 0;
+    /* border-right: thick solid #e5e5e5;
+    border-width: 0.2rem;
+    padding-right: 2rem; */
+  }
+
+  /* .Team-col-2 {
+    border-right: thick solid #e5e5e5;
+    border-width: 0.2rem;
+    padding-right: 2rem;
+  } */
+
+  /* .Team-col-3 {
+    border-right: thick solid #e5e5e5;
+    border-width: 0.2rem;
+    padding-right: 2rem;
+  } */
+
+  .emp-pic {
+    position: relative;
+    margin: auto;
+  }
+
+  .image-emp {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: #17a2b8;
+  }
+
+  .emp-name {
+    position: relative;
+    top: 3rem;
+  }
+
+  .emp-role,
+  .emp-detail {
+    position: relative;
+    top: 3rem;
+  }
+
+  .btn-read-more {
+    position: relative;
+    top: 3rem;
+  }
+
+  .Team-col-2 {
+    margin-top: 14rem;
+  }
+
+  .Team-col-4 {
+    margin-top: 14rem;
+  }
+
+  .emp-pic {
+    width: 8rem;
+    height: 5rem;
+  }
+
+  .more-details {
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    display: none;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 100000;
+  }
+
+  /* .more-details .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  } */
+
+  .modal-content {
+    background-color: white;
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-color: #2ecc71;
+    border-width: 0.15rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .popupCloseButton {
+    background-color: #fff;
+    color: #3498db;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  .popupCloseButton:hover {
+    background-color: #ccc;
+  }
+
+  .modal-container {
+    padding-top: 1rem;
+  }
+
+  /* This was the previous look */
+
+  .add1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 16.875rem; /* 302px */
+    height: 25rem; /* 400px */
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #fff;
+    color: black;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #fff;
+    color: #000;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back {
+    display: block;
+  }
+
+  .employee-pic {
+    position: relative;
+    width: 100%; /* 300px */
+    height: 300px;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+
+  .employee-name {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-left: 0;
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .employee-role {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-left: 0rem;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .employee-description {
+    display: none;
+  }
+
+  .table-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tab1 {
+    margin-right: 0.9rem;
+  }
+
+  /* ================== Contact Us ================================== */
+  .mobile-form {
+    display: none;
+  }
+
+  .website-form {
+    display: block;
+  }
+
+  .add1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+  }
+
+  .slide-down {
+    margin-top: 2rem;
+  }
+
+  .slide-left {
+    padding-left: 5rem;
+    padding-top: 2rem;
+  }
+
+  .socials {
+    padding: 1.5rem 0;
+  }
+
+  .socials ul {
+    list-style: none;
+    margin-bottom: 0;
+    display: flex;
+    margin-left: 4rem;
+  }
+
+  .socials .icon-circle {
+    height: 40px;
+    width: 40px;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 15px 0 0;
+    text-align: center;
+    box-shadow: 0 0 0 3px #0078ff;
+    display: block;
+  }
+
+  .socials ul li {
+    display: inline-block;
+    flex: 0 0 20%;
+  }
+
+  /* ============================== Services ========================= */
+  .parent-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .child-container {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-right: 2rem;
+  }
+
+  .component {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .component:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+  }
+
+  .component:hover:before {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+  }
+
+  .component h2 {
+    position: absolute;
+    left: 2.5rem;
+    top: 1.5rem;
+    font-size: 2.5em;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+
+  .component:hover h2 {
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-25px);
+  }
+
+  .component h3 {
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+    color: #333;
+    transition: 0.5s;
+    top: 1.7rem;
+  }
+
+  .component:hover h3,
+  .component:hover ul {
+    color: #fff;
+  }
+
+  .component ul {
+    position: relative;
+    z-index: 2;
+    color: #555;
+    transition: 0.5s;
+    top: 2rem;
+  }
+
+  .children {
+  }
+
+  .first-child {
+    background-color: aqua;
+    text-align: center;
+  }
+
+  .icon-of-child {
+    font-size: 4rem;
+  }
+
+  .second-child {
+    background-color: aquamarine;
+  }
+
+  .second-child ul {
+    list-style: none;
+  }
+
+  /* ========================= On Going Projects =================== */
+
+  /* width: 69.4rem; height: 38rem */
+
+  .position-image {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .img-size {
+    width: 22rem;
+    height: 12rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-left: 0.9rem;
+  }
+
+  /* ========================== New Services =========================== */
+
+  .image-services {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.2rem;
+    height: 15rem;
+  }
+
+  .image-services1 {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.2rem;
+    height: 25rem;
+    margin-top: 4rem;
+  }
+
+  .image-services2 {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.2rem;
+    height: 22rem;
+  }
+
+  .image-services3 {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.2rem;
+    height: 15rem;
+  }
+
+  .image-services4 {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.2rem;
+    height: 18rem;
+  }
+
+  .heading-services {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .services-color {
+    background-color: #0c3d5e;
+  }
+}

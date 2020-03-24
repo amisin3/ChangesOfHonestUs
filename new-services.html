@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HonestUs</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="hamburger.css" />
+  </head>
+  <body>
+    <nav class="navar fixed-it" id="mainNav">
+      <h1>
+        <a href="#" class="navbar-title"
+          ><img
+            class="company-logo"
+            src="images/Company-Logo/Logo Honestus.png"
+            alt="images"
+        /></a>
+      </h1>
+      <div class="container navar-list-container pc-site">
+        <ul class="navar-nav container">
+          <li class="nav-home">
+            <a href="index.html" class="link-home">Home</a>
+          </li>
+          <li class="nav-about">
+            <a href="aboutus.html" class="link-about">About</a>
+          </li>
+          <li class="nav-services">
+            <a href="services.html" class="link-services">Services</a>
+          </li>
+          <li class="nav-work">
+            <a href="clients.html" class="link-work">Clients</a>
+          </li>
+          <li class="nav-contact">
+            <a href="contact.html" class="link-contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar mobile-site" id="sidebar">
+        <div
+          class="toggle-btn menu-wrap"
+          id="toggle-btn"
+          onclick="toggleSideBar()"
+        >
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger">
+            <div></div>
+          </div>
+        </div>
+        <ul>
+          <input type="checkbox" class="toggler" />
+          <li>
+            <a href="index.html" class="activa" onclick="toggleSideBar()">Home</a>
+          </li>
+          <input type="checkbox" class="toggler" />
+          <li>
+            <a href="aboutus.html" class="activa" onclick="toggleSideBar()">About</a>
+          </li>
+          <input type="checkbox" class="toggler" />
+          <li>
+            <a href="services.html" class="activa" onclick="toggleSideBar()"
+              >Services</a
+            >
+          </li>
+          <input type="checkbox" class="toggler" />
+          <li>
+            <a href="clients.html" class="activa" onclick="toggleSideBar()"
+              >Clients</a
+            >
+          </li>
+          <input type="checkbox" class="toggler" />
+          <li>
+            <a href="contact.html" class="activa" onclick="toggleSideBar()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="home" class="home-sect">
+      <div class="home-inner">
+        <h1 class="x-large">HONESTUS FIDE CONSULTING PRIVATE LIMITED</h1>
+        <!-- <p class="sub-heading">We liv to entertain.</p> -->
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="container-fluid ">
+        <div class="box-shadow-full services-color">
+            <div class="row">
+                <div class="col-md st">
+                    <img src="./images/Cost-Control.jpg" class="image-services">
+                    <p class="heading-services">Audits and Cost Control</p>
+                    <button class="alert alert-danger" style="font-weight: bolder; color: black;">Read More</button>
+                </div>
+                <div class="col-md nd">
+                    <img src="./images/comprehensive-budgetting1.jpg" class="image-services">
+                    <p class="heading-services">Budget Preparation</p>
+                    <button class="alert alert-warning" style="font-weight: bolder; color: black;">Read More</button>
+                </div>
+                <div class="col-md rd">
+                    <img src="./images/Vendor-Negotiations.jpg" class="image-services">
+                    <p class="heading-services">Vendor Negotiations</p>
+                    <button class="alert alert-danger" style="font-weight: bolder; color: black;">Read More</button>
+                </div>
+                <div class="col-md th">
+                    <img src="./images/accountancy-services.jpg" class="image-services">
+                    <p class="heading-services">Accountancy Services</p>
+                    <button class="alert alert-warning" style="font-weight: bolder; color: black;">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="box-shadow-full">
+            <div class="row">
+                <div class="col-md-12 bg-danger">first</div>
+                <div class="col-md-12">Second</div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="contact" class="contact">
+        <div class="container-fluid">
+          <div class="box-shadow-full mobile-form">
+            <h1 class="x-large center-text">Contact Us</h1>
+            <div class="form-container">
+              <form class="form" id="form">
+                <div class="form-control1">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" placeholder="Enter your name">
+                  <small>Error message</small>
+                </div>
+                <div class="form-control1 ">
+                  <label for="email">Your email</label>
+                  <input type="text" id="email" placeholder="Enter your email">
+                  <small>Error message</small>
+                </div>
+                <div class="form-control1">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" placeholder="Enter your subject">
+                  <small>Error message</small>
+                </div>
+                <div class="form-control1">
+                  <label for="message">Your message</label>
+                  <input type="text" id="message" placeholder="Enter your message">
+                  <small>Error message</small>
+                </div>
+                <button class="submit">Send Message</button>
+              </form>
+            </div>
+            <ul class="list-icon">
+              <li><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>208 Corporate Avenue, Sonawala Road, Goregaon (E), Mumbai – 400 063</li>
+              <li><span class="phone-icon"><i class="fas fa-mobile-alt"></i></span>+91 7738369179 / +91 9820876358</li>
+              <li><span class="mail-icon"><i class="fas fa-envelope"></i></span>office@scassociate.com</li>
+            </ul>
+          </div>
+          <div class="box-shadow-full website-form">
+            <div class="add1">
+              <div class="col-md-6">
+                <h1 class="x-large center-text">Contact Us</h1>
+                <div class="underline"></div>
+                <div class="form-container slide-down">
+                  <form class="form" id="web-form">
+                    <div class="form-control1">
+                      <label for="name">Your Name</label>
+                      <input type="text" id="web-name" placeholder="Enter your name">
+                      <small>Error message</small>
+                    </div>
+                    <div class="form-control1">
+                      <label for="email">Your email</label>
+                      <input type="text" id="web-email" placeholder="Enter your email">
+                      <small>Error message</small>
+                    </div>
+                    <div class="form-control1">
+                      <label for="subject">Subject</label>
+                      <input type="text" id="web-subject" placeholder="Enter your subject">
+                      <small>Error message</small>
+                    </div>
+                    <div class="form-control1">
+                      <label for="message">Your message</label>
+                      <input type="text" id="web-message" placeholder="Enter your message">
+                      <small>Error message</small>
+                    </div>
+                    <button class="submit">Send Message</button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6">
+                
+                  <h1 class="x-large center-text">Contact Us With</h1>
+                  <div class="underline"></div>
+                  <div class="slide-left">
+                    <ul class="list-icon">
+                      <li><span class="location-icon"><i class="fas fa-map-marker-alt"></i></span>208 Corporate Avenue, Sonawala Road, Goregaon (E), Mumbai – 400 063</li>
+                      <li><span class="phone-icon"><i class="fas fa-mobile-alt"></i></span>+91 7738369179 / +91 9820876358</li>
+                      <li><span class="mail-icon"><i class="fas fa-envelope"></i></span>office@scassociate.com</li>
+                    </ul>
+                    <div class="socials">
+                      <ul>
+                        <li><span class="icon-circle"><i class="fab fa-facebook-f"></i></span></li>
+                        <li><span class="icon-circle"><i class="fab fa-instagram"></i></span></li>
+                        <li><span class="icon-circle"><i class="fab fa-twitter"></i></span></li>
+                      </ul>
+                    </div>
+                    <div id="googleMap" style="width:100%;height:400px;"></div>
+                </div>
+  
+              </div>
+            </div>
+            </div>
+        </div>
+        </div>
+      </section>
+  </body>
+  <script src="services.js"></script>
+  
+  <script>
+    function myMap() {
+      var location = {lat: 19.305601, lng:72.859375};
+      var map = new google.maps.Map(document.getElementById("googleMap"), {
+        zoom: 4,
+        center: location
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map:map
+      });
+    }
+  </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCy-ar9_4Tdu6oGQZN1VztMxrgE4gUA-Y&callback=myMap"></script>
+</html>
